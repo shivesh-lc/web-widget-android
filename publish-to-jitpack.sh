@@ -73,13 +73,20 @@ echo -e "${YELLOW}🧪 Running tests...${NC}"
 
 # Commit changes
 echo -e "${YELLOW}📝 Committing changes...${NC}"
-git add library/build.gradle
-git commit -m "Bump version to ${NEW_VERSION}"
+if ! git diff-index --quiet HEAD --; then
+    git add library/build.gradle
+    git commit -m "Bump version to ${NEW_VERSION}"
+else
+    echo "No changes to commit."
+fi
+
+# Push current branch
+echo -e "${YELLOW}📤 Pushing current branch...${NC}"
+git push origin $(git branch --show-current)
 
 # Create and push tag
 echo -e "${YELLOW}🏷️  Creating tag v${NEW_VERSION}...${NC}"
 git tag -a "v${NEW_VERSION}" -m "Release version ${NEW_VERSION}"
-git push origin main
 git push origin "v${NEW_VERSION}"
 
 echo ""
