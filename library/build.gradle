@@ -60,14 +60,14 @@ afterEvaluate {
             release(MavenPublication) {
                 from components.release
                 
-                groupId = 'com.github.limechat'
-                artifactId = 'limechat-android-sdk'
-                version = '0.0.1'
+                groupId = 'com.github.shivesh-lc'
+                artifactId = 'web-widget-android'
+                version = '0.0.2'
                 
                 pom {
                     name = 'LimeChat Android SDK'
                     description = 'Official Android SDK for LimeChat widget integration'
-                    url = 'https://github.com/limechat/limechat-android-sdk'
+                    url = 'https://github.com/shivesh-lc/web-widget-android'
                     
                     licenses {
                         license {
@@ -78,16 +78,16 @@ afterEvaluate {
                     
                     developers {
                         developer {
-                            id = 'limechat'
+                            id = 'shivesh-lc'
                             name = 'LimeChat Team'
                             email = 'support@limechat.com'
                         }
                     }
                     
                     scm {
-                        connection = 'scm:git:git://github.com/limechat/limechat-android-sdk.git'
-                        developerConnection = 'scm:git:ssh://github.com:limechat/limechat-android-sdk.git'
-                        url = 'https://github.com/limechat/limechat-android-sdk'
+                        connection = 'scm:git:git://github.com/shivesh-lc/web-widget-android.git'
+                        developerConnection = 'scm:git:ssh://github.com:shivesh-lc/web-widget-android.git'
+                        url = 'https://github.com/shivesh-lc/web-widget-android'
                     }
                 }
             }
