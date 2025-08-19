@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="limechat_title">Support Chat</string>
+    <string name="limechat_open_chat">Open chat</string>
+    <string name="limechat_close_chat">Close chat</string>
+</resources>

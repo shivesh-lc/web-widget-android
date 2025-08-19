@@ -1,0 +1,3 @@
+rootProject.name = 'limechat-android-sdk'
+include ':library'
+include ':example-app'

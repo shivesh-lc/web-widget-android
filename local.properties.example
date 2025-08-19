@@ -1,0 +1,12 @@
+# Example local.properties file
+# Copy this to local.properties and update with your values
+
+# Android SDK location (update this path)
+sdk.dir=/Users/YOUR_USERNAME/Library/Android/sdk
+
+# Your LimeChat website token for testing
+limechat.test.token=YOUR_WEBSITE_TOKEN_HERE
+
+# Test user information (optional)
+limechat.test.user.name=Test User
+limechat.test.user.email=test@example.com

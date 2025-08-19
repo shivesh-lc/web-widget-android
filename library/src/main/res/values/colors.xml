@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="limechat_primary">#5C4FDB</color>
+    <color name="limechat_primary_dark">#4A3FC9</color>
+    <color name="limechat_accent">#FF6B6B</color>
+    <color name="limechat_badge_color">#FF4757</color>
+</resources>

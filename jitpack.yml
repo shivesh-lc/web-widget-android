@@ -1,0 +1,17 @@
+jdk:
+  - openjdk17
+
+before_install:
+  - ./gradlew clean
+
+install:
+  - ./gradlew :library:assembleRelease
+  - ./gradlew :library:generatePomFileForReleasePublication
+  - ./gradlew :library:publishReleasePublicationToMavenLocal
+
+# Optional: Add tests to ensure quality
+script:
+  - ./gradlew :library:test
+  - ./gradlew :library:assembleRelease
+  - ./gradlew :library:generatePomFileForReleasePublication
+  - ./gradlew :library:publishReleasePublicationToMavenLocal
