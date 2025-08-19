@@ -5,6 +5,10 @@
 
 set -e
 
+# Set Java 17 for this session
+export JAVA_HOME=/opt/homebrew/opt/openjdk@17
+export PATH=$JAVA_HOME/bin:$PATH
+
 # Colors for output
 RED='\033[0;31m'
 GREEN='\033[0;32m'
@@ -13,6 +17,11 @@ BLUE='\033[0;34m'
 NC='\033[0m' # No Color
 
 echo -e "${BLUE}🚀 LimeChat Android SDK - JitPack Publishing Script${NC}"
+echo ""
+
+# Verify Java version
+echo -e "${BLUE}☕ Using Java version:${NC}"
+java -version
 echo ""
 
 # Check if we're in a git repository
